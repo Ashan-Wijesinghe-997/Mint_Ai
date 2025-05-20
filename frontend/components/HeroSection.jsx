@@ -1,4 +1,7 @@
 import { Button } from "@/components/ui/button";
+import HeroImg from "@/components/Assets/HeroImg.png"
+import Image from 'next/image';
+
 
 export default function HeroSection() {
   return (
@@ -46,8 +49,8 @@ export default function HeroSection() {
           <div className="md:w-1/2 relative">
             <div className="bg-gradient-to-br from-primary/10 to-purple-500/10 rounded-3xl p-4">
               <div className="bg-white rounded-3xl shadow-xl p-4 md:p-6 relative">
-                <img
-                  src="/placeholder.svg"
+                <Image
+                  src={HeroImg}
                   alt="AI Marketing Dashboard"
                   className="w-full h-auto rounded-xl"
                 />
