@@ -1,25 +1,36 @@
 import { Button } from "@/components/ui/button";
+import HeroImg from "@/components/Assets/HeroImg.png"
+import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <section className="py-12 md:py-20 px-4">
+    <section className="py-12 md:py-20 px-4 ml-10 mr-10">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center">
           {/* Left side */}
           <div className="md:w-1/2 mb-12 md:mb-0">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-black">
+              <span className=" bg-clip-text text-purple-600">
                 AI-Driven
               </span>
               <br />
               <span>marketing</span>
             </h1>
-            <p className="text-lg text-gray-600 mb-8 max-w-lg">
+            <p className="text-lg text-black mb-8 max-w-lg font-medium">
               From AI insights to effective strategy, we'll help your business stay ahead of the competition. Our advanced AI solutions are trained to understand your business needs and deliver results that drive success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-primary hover:bg-primary/90">Start for free</Button>
-              <Button variant="outline">Learn more</Button>
+              <Button 
+                className="bg-purple-700 text-white hover:bg-purple-800 transform hover:scale-105 transition duration-300 ease-in-out"
+              >
+                Start for free
+              </Button>
+              <Button 
+                variant="outline" 
+                className="border-purple-700 text-purple-700 hover:bg-purple-700 hover:text-white transform hover:scale-105 transition duration-300 ease-in-out"
+              >
+                Learn more
+              </Button>
             </div>
             {/* Ratings */}
             <div className="mt-8">
@@ -36,8 +47,8 @@ export default function HeroSection() {
                     </svg>
                   ))}
                 </div>
-                <span className="ml-2 text-gray-600 font-medium">4.9/5.0</span>
-                <span className="ml-2 text-gray-500">(1.2k reviews)</span>
+                <span className="ml-2 text-black font-semibold">4.9/5.0</span>
+                <span className="ml-2 text-gray-700">(1.2k reviews)</span>
               </div>
             </div>
           </div>
@@ -46,10 +57,10 @@ export default function HeroSection() {
           <div className="md:w-1/2 relative">
             <div className="bg-gradient-to-br from-primary/10 to-purple-500/10 rounded-3xl p-4">
               <div className="bg-white rounded-3xl shadow-xl p-4 md:p-6 relative">
-                <img
-                  src="/placeholder.svg"
+                <Image
+                  src={HeroImg}
                   alt="AI Marketing Dashboard"
-                  className="w-full h-auto rounded-xl"
+                  className="w-full h-auto rounded-xl animate-float"
                 />
                 <div className="absolute -top-6 -right-6 bg-gradient-to-br from-primary to-purple-600 rounded-full p-4 shadow-lg">
                   <svg
