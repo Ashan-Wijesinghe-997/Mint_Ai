@@ -4,7 +4,7 @@ import Board from "@/components/Assets/Board.png";
 
 export default function InsightSection() {
   return (
-    <section className="py-16 md:py-24 px-4 bg-gradient-to-br from-accent/50 to-white ml-5">
+    <section className="py-16 md:py-24 px-4 bg-gradient-to-br from-accent/50 to-white ml-10 mr-10">
       <div className="container mx-auto">
         <div className="flex flex-col-reverse md:flex-row items-center gap-12">
           {/* Text on Left */}
