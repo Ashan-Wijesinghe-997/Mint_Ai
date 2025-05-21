@@ -20,8 +20,17 @@ export default function HeroSection() {
               From AI insights to effective strategy, we'll help your business stay ahead of the competition. Our advanced AI solutions are trained to understand your business needs and deliver results that drive success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-primary hover:bg-primary/90">Start for free</Button>
-              <Button variant="outline">Learn more</Button>
+              <Button 
+                className="bg-purple-700 text-white hover:bg-purple-800 transform hover:scale-105 transition duration-300 ease-in-out"
+              >
+                Start for free
+              </Button>
+              <Button 
+                variant="outline" 
+                className="border-purple-700 text-purple-700 hover:bg-purple-700 hover:text-white transform hover:scale-105 transition duration-300 ease-in-out"
+              >
+                Learn more
+              </Button>
             </div>
             {/* Ratings */}
             <div className="mt-8">
