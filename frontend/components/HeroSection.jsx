@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import HeroImg from "@/components/Assets/HeroImg.png"
-import Image from 'next/image';
+import HeroImg from "@/components/Assets/HeroImg.png";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -10,9 +10,7 @@ export default function HeroSection() {
           {/* Left side */}
           <div className="md:w-1/2 mb-12 md:mb-0">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-black">
-              <span className=" bg-clip-text text-purple-600">
-                AI-Driven
-              </span>
+              <span className="bg-clip-text text-purple-600">AI-Driven</span>
               <br />
               <span>marketing</span>
             </h1>
@@ -20,13 +18,11 @@ export default function HeroSection() {
               From AI insights to effective strategy, we'll help your business stay ahead of the competition. Our advanced AI solutions are trained to understand your business needs and deliver results that drive success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                className="bg-purple-700 text-white hover:bg-purple-800 transform hover:scale-105 transition duration-300 ease-in-out"
-              >
+              <Button className="bg-purple-700 text-white hover:bg-purple-800 transform hover:scale-105 transition duration-300 ease-in-out">
                 Start for free
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 className="border-purple-700 text-purple-700 hover:bg-purple-700 hover:text-white transform hover:scale-105 transition duration-300 ease-in-out"
               >
                 Learn more
@@ -54,13 +50,13 @@ export default function HeroSection() {
           </div>
 
           {/* Right side */}
-          <div className="md:w-1/2 relative">
+          <div className="md:w-1/2 relative flex justify-center">
             <div className="bg-gradient-to-br from-primary/10 to-purple-500/10 rounded-3xl p-4">
-              <div className="bg-white rounded-3xl shadow-xl p-4 md:p-6 relative">
+              <div className="bg-white rounded-3xl shadow-xl p-4 md:p-6 relative flex justify-center">
                 <Image
                   src={HeroImg}
                   alt="AI Marketing Dashboard"
-                  className="w-full h-auto rounded-xl animate-float"
+                  className="w-full max-w-md md:max-w-lg h-auto rounded-xl animate-float"
                 />
                 <div className="absolute -top-6 -right-6 bg-gradient-to-br from-primary to-purple-600 rounded-full p-4 shadow-lg">
                   <svg
