@@ -2,22 +2,21 @@ import { Button } from "@/components/ui/button";
 import HeroImg from "@/components/Assets/HeroImg.png"
 import Image from 'next/image';
 
-
 export default function HeroSection() {
   return (
-    <section className="py-12 md:py-20 px-4">
+    <section className="py-12 md:py-20 px-4 ml-5">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center">
           {/* Left side */}
           <div className="md:w-1/2 mb-12 md:mb-0">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-black">
+              <span className=" bg-clip-text text-purple-600">
                 AI-Driven
               </span>
               <br />
               <span>marketing</span>
             </h1>
-            <p className="text-lg text-gray-600 mb-8 max-w-lg">
+            <p className="text-lg text-black mb-8 max-w-lg font-medium">
               From AI insights to effective strategy, we'll help your business stay ahead of the competition. Our advanced AI solutions are trained to understand your business needs and deliver results that drive success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -39,8 +38,8 @@ export default function HeroSection() {
                     </svg>
                   ))}
                 </div>
-                <span className="ml-2 text-gray-600 font-medium">4.9/5.0</span>
-                <span className="ml-2 text-gray-500">(1.2k reviews)</span>
+                <span className="ml-2 text-black font-semibold">4.9/5.0</span>
+                <span className="ml-2 text-gray-700">(1.2k reviews)</span>
               </div>
             </div>
           </div>
