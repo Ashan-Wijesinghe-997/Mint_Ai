@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <section className="py-12 md:py-20 px-4 ml-5">
+    <section className="py-12 md:py-20 px-4 ml-10 mr-10">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center">
           {/* Left side */}
@@ -60,7 +60,7 @@ export default function HeroSection() {
                 <Image
                   src={HeroImg}
                   alt="AI Marketing Dashboard"
-                  className="w-full h-auto rounded-xl"
+                  className="w-full h-auto rounded-xl animate-float"
                 />
                 <div className="absolute -top-6 -right-6 bg-gradient-to-br from-primary to-purple-600 rounded-full p-4 shadow-lg">
                   <svg
